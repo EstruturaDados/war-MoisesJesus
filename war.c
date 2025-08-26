@@ -28,14 +28,14 @@ struct Territorio {
 
 int main(){
     //Um vetor de structs Territorios
-    struct Territorio territorios[5];
+    struct Territorio territorios[NumeroTerritorios];
 
     titulo("WAR ESTRUTURADO - CADASTRO ESTRUTURAL");
 
     printf("Vamos cadastrar os 5 territorios iniciais do nosso mundo.\n");
 
     //Um laço for para o cadastro dos territórios
-    for (int i = 0; i < 5; i++){
+    for (int i = 0; i < NumeroTerritorios; i++){
         printf("\n");
         printf("--- Cadastrando Territorio %d ---\n", i + 1);
         
@@ -56,7 +56,7 @@ int main(){
     titulo("MAPA DO MUNDO - ESTADO ATUAL");
 
     //Um laço for para mostrar cada um dos territórios cadastrado
-    for (int i = 0; i < 5; i++){
+    for (int i = 0; i < NumeroTerritorios; i++){
         printf("TERRITORIO %d:\n", i + 1);
         printf("   - Nome: %s\n", territorios[i].nome);
         printf("   - Dominado por: Exercito %s\n", territorios[i].cor);
